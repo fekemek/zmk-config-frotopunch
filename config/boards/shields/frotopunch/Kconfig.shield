@@ -1,2 +1,2 @@
 config SHIELD_FROTOPUNCH
-    def_bool $(shields_list_contains, frotopunch)
+    def_bool $(shields_list_contains,frotopunch)
