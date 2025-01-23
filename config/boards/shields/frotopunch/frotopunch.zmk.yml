@@ -1,0 +1,8 @@
+file_format: "1"
+id: frotopunch
+name: frotopunch
+type: shield
+url: "storfroto"
+requires: [pro_micro]
+features:
+  - keys
