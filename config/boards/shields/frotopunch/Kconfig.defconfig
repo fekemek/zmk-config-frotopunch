@@ -4,3 +4,7 @@ config ZMK_KEYBOARD_NAME
     default "frotopunch" 
 
     endif
+    
+# Enable ZMK Studio for Realtime Keymap Updates
+CONFIG_ZMK_STUDIO=y
+CONFIG_ZMK_STUDIO_LOCKING=n
