@@ -4,7 +4,7 @@
 / {
     chosen {
         zmk,kscan = &kscan0;
-        zmk,physical-layout = &frotopunch_physical_layout;
+        zmk,physical-layout = &default_layout;
         zmk,studio-rpc-uart = &uart1;
     };
 
