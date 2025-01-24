@@ -5,6 +5,7 @@
     chosen {
         zmk,kscan = &kscan0;
         zmk,physical-layout = &frotopunch_physical_layout;
+        zmk,studio-rpc-uart = &uart1;
     };
 
     default_transform: keymap_transform_0 {
@@ -47,10 +48,5 @@
             , <&pro_micro 16 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
             , <&pro_micro 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
             ;
-    };
-    
-    &frotopunch_physical_layout {
-        kscan = <&kscan0>;
-        transform = <&matrix_transform0>;
     };
 };
