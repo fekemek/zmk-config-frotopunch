@@ -50,7 +50,3 @@
             ;
     };
 };
-    &frotopunch_physical_layout {
-        kscan = <&kscan0>;
-        transform = <&matrix_transform0>;
-    };
