@@ -13,7 +13,7 @@
 //#include "zmk-helpers/unicode-chars/swedish.dtsi"
 
 &caps_word {
-    continue-list = <LBKT LEFT_BRACKET SQT SINGLE_QUOTE SEMICOLON SEMI>;
+    continue-list = <SPACE SLASH UNDERSCORE BACKSPACE DELETE LBKT LEFT_BRACKET SQT SINGLE_QUOTE SEMICOLON SEMI>;
 };
 
 / {
