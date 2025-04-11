@@ -14,11 +14,8 @@
 
     behaviors {
 
-        iOS_Shift: iOS_Shift {
-            compatible = "zmk,behavior-tap-dance";
-            label = "IOS_SHIFT";
-            #binding-cells = <0>;
-            bindings = <&sk LSHIFT>, <&kt LSHIFT>;
+        &caps_word {
+            continue-list = <LEFT_BRACKET SINGLE_QUOTE SEMICOLON>;
         };
 
         // prevent multiple uppercase letters on sticky shift
@@ -35,7 +32,7 @@
         // hold: shift | tap: quick sticky shift | dtap: caps-word
         Hodl: Hodl {
             compatible = "zmk,behavior-tap-dance";
-            label = "HODLSHIFT";
+            label = "HODL";
             #binding-cells = <0>;
             bindings = <&skq LSHIFT>, <&caps_word>;
         };
