@@ -13,7 +13,7 @@
 //#include "zmk-helpers/unicode-chars/swedish.dtsi"
 
 &caps_word {
-    continue-list = <LEFT_BRACKET SINGLE_QUOTE SEMICOLON>;
+    continue-list = <LBKT LEFT_BRACKET SQT SINGLE_QUOTE SEMICOLON SEMI>;
 };
 
 / {
@@ -54,9 +54,9 @@
         Alfa {
             display-name = "Alfa";
             bindings = <
-                &kp ESC  &kp Q  &kp W  &kp E  &kp R  &kp T            &kp Y  &kp U  &kp I      &kp O      &kp P          &kp SV_A_RING
-                &kp TAB  &kp A  &kp S  &kp D  &kp F  &kp G            &kp H  &kp J  &kp K      &kp L      &kp SV_O_UMLAUT  &kp SV_A_UMLAUT
-                &Hodl    &kp Z  &kp X  &kp C  &kp V  &kp B            &kp N  &kp M  &kp SLASH  &kp COMMA  &kp PERIOD     &trans
+                &kp ESC  &kp Q  &kp W  &kp E  &kp R  &kp T            &kp Y  &kp U  &kp I      &kp O      &kp P     &kp LBKT
+                &kp TAB  &kp A  &kp S  &kp D  &kp F  &kp G            &kp H  &kp J  &kp K      &kp L      &kp SEMI  &kp SQT
+                &Hodl    &kp Z  &kp X  &kp C  &kp V  &kp B            &kp N  &kp M  &kp SLASH  &kp COMMA  &kp DOT   &trans
                                        &mo 1  &kp BSPC  &kp LEFT_GUI  &kp LEFT_ALT  &kp SPACE  &lt 2 ENTER
             >;
         };
@@ -66,7 +66,7 @@
             bindings = <
                 &trans  &kp GRAVE &kp N1 &kp N2 &kp N3  &kp MINUS                        &kp LS(LEFT_ALT)  &none     &kp UP_ARROW     &none      &kp RG(A)  &kp RG(F)
                 &trans  &kp EQUAL &kp N4 &kp N5 &kp N6  &mt RS(RIGHT_ALT) NUMBER_0       &kp RIGHT_SHIFT   &kp LEFT  &kp DOWN         &kp RIGHT  &kp RG(C)  &kp RG(V)
-                &trans  &kp RIGHT_BRACKET &kp N7 &kp N8 &kp N9 &kp BACKSLASH             &kp RIGHT_ALT     &kp NUBS  &kp NUHS  &kp LCTRL  &kp RG(X)  &kp RG(Z)
+                &trans  &kp RBKT &kp N7 &kp N8 &kp N9 &kp BACKSLASH             &kp RIGHT_ALT     &kp NUBS  &kp NUHS  &kp LCTRL  &kp RG(X)  &kp RG(Z)
                 &trans  &trans  &trans                   &trans            &trans    &lt 3 ENTER
             >;
         };
